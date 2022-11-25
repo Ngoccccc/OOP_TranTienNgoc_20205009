@@ -1,0 +1,6 @@
+1. After the call of swap(jungleDVD, cinderellaDVD) why does the title of these two objects still remain?
+=> Do trong java là truyền tham trị, nên jungleDVD và cinderellaDVD trong hàm swap là bản sao của jungleDVD và cinderellaDVD ở bên ngoài. Việc swap hai bản sao không ảnh hưởng đến bản gốc.
+2. After the call of changeTitle(jungleDVD, cinderellaDVD.getTitle()) why is the title of the JungleDVD changed?
+=> Bản sao jungleDVD được "trỏ" tới cùng một vị trí trên heap. Nên khi thay đổi giá trị của object, bản chất là đang thay đổi trên heap, nên jungleDVD (bên ngoài) cũng được thay đổi giá trị.
+3. Please write a swap() method that can correctly swap the two objects.
+=> Tạo một wrapper class chứa class con. Khi này việc thay đổi thuộc tính trong wrapper class sẽ tương đương việc thay đổi object của class con.z
