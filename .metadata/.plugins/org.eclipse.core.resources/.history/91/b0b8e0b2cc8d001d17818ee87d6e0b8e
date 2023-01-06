@@ -1,0 +1,12 @@
+package hust.soict.dsai.aims.screen;
+
+import hust.soict.dsai.aims.cart.Cart;
+import hust.soict.dsai.aims.store.Store;
+
+public class AddDigitalVideoDiscToStoreScreen {
+
+	public AddDigitalVideoDiscToStoreScreen(Store store, Cart cart) {
+		// TODO Auto-generated constructor stub
+	}
+
+}
